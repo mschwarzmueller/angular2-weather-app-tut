@@ -23,8 +23,8 @@ export class WeatherService {
     }
 
     searchWeatherInfo(city: string): Observable<any> {
-        // API key: 10b6909f93442b41be1f1aea1619cf98
-        return this._http.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=10b6909f93442b41be1f1aea1619cf98&units=metric')
+        
+        return this._http.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=KEY8&units=metric')
             .map(
                 response => response.json()
             )
