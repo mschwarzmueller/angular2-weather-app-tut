@@ -9,8 +9,7 @@ import {WeatherService} from "./weather.service";
             <weather-item *ngFor="#weatherItem of weatherItems" [item]="weatherItem"></weather-item>
         </section>
     `,
-    directives: [WeatherItemComponent],
-    providers: [WeatherService]
+    directives: [WeatherItemComponent]
 })
 export class WeatherListComponent implements OnInit {
     weatherItems: WeatherItem[];
